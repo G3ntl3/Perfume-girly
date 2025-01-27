@@ -1,0 +1,86 @@
+body{
+  background-color: black !important;
+}
+.navbar {
+  background-color: rgb(26, 2, 2) !important;
+}
+.brandtext {
+  margin-top: -130px;
+}
+.brandname {
+  font-size: 3.5rem !important;
+}
+.brandinfo {
+}
+.gold {
+
+  color: rgb(254, 230, 78) !important;
+}
+.bg-gold{
+ background-color: rgb(254, 230, 78) !important;
+
+}
+.sectb {
+  position: relative;
+  height: 300px;
+  background-position: center;
+  background-image: url(./img/sectb_bg.jpg);
+  background-size: contain;
+  background-repeat:round;
+  /* overflow: hidden; */
+  /* padding: 50px 0px; */
+}
+
+.sectb .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8   );
+  z-index: 1;
+}
+
+.sectb h1,
+.sectb p {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.sectb h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 1rem;
+}
+
+.sectb p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.sectc{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(39,36,36,1) 58%);
+}
+
+.sectc img{
+/* padding: 0px 8 0px; */
+  width: 100%;
+}
+.sectc .transparentperfumetext{
+
+}
+
+@media (max-width: 480px) {
+  * {
+    /* display: none; */
+  }
+
+  .brandtext {
+    margin: 40px 0px;
+  }
+
+  .brandname {
+    font-size: 2rem;
+  }
+}
