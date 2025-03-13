@@ -231,6 +231,33 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(39,36,36,1) 58%);
 
 }
 
+.secd{
+  background-image: url('./img/blackpef.jpg');
+  height: 100vh;
+  width: 100vwx;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+.perfumetext{
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  display: block;
+  text-align:start;
+  justify-content: center;
+  margin:0px 150px;
+}
+.perfumetext span{
+color:  rgb(254, 230, 78) !important;
+font-size: 2em;
+/* padding: 60px 0px; */
+
+}
+.perfumetext button{
+   background-color: rgb(254, 230, 78) !important;
+
+}
+
 @media (max-width: 480px) {
   * {
     /* display: none; */
