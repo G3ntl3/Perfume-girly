@@ -61,8 +61,8 @@ body {
 
 button {
   cursor: pointer;
-  padding: 8px 12px;
-  border: none;
+  padding: 8px 12px !important;
+  /* border: 2px solid red !important; */
   border-radius: 5px;
   font-size: 14px;
 }
