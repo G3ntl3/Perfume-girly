@@ -162,6 +162,9 @@ body{
  background-color: rgb(254, 230, 78) !important;
 
 }
+.cart-btn{
+  background-color: rgb(57,48,12) !important;
+}
 .sectb {
   margin: 100px 0px;
   /* display: flex; */

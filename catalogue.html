@@ -1,26 +1,30 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-      <link
-      
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
-      />
-      <link rel="stylesheet" href="catalogue.css">
-<link rel="stylesheet" href="style.css">
-      <title>Shopping Cart</title>
-    </head>
-    <body>
-<!-- navbar begins here -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="catalogue.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <!-- navbar begins here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -66,7 +70,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-5 " aria-current="page" href="#"
+              <a class="nav-link active fs-5" aria-current="page" href="#"
                 >Contact</a
               >
             </li>
@@ -97,244 +101,34 @@
         </div>
       </div>
     </nav>
-<!-- navbar ends here -->
+    <!-- navbar ends here -->
 
+    <div id="product-section"></div>
 
-      <div id="product-section ">
+    <div class="cartsection">
+      
+      <button id="whatsappOrderBtn" class="btn btn-success">Order via WhatsApp</button>
+      <h1>Your cart (<span id="cart-count">0</span>)</h1>
+      <ul id="cart-list">
 
+       
+
+      </ul>
+
+      <div id="empty-cart">
+        <center>Your added items would appear here</center>
+        <img src="./img/emptycart.png" alt="empty cart " class="" srcset="" />
       </div>
+    </div>
 
-      <div class="cartsection">
-        <h1>Your cart (<span id="cart-count">0</span>)</h1>
-        <ul id="cart-list"></ul>
-        
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-        
-        <div id="empty-cart">
-          <center>Your added items would appear here</center>
-          <img src="./img/emptycart.png" alt="empty cart " class="" srcset="">
-        </div>
-
-      </div>
-
-     
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
-      ></script>
-
-<script src="./catalogue.js"></script>
+  <script src="./catalogue.js"></script>
 
 
-<script>
-         // Product data
-        const data = [
-          {
-            image: {
-              thumbnail: "./img/pef/pef 2.jpg",
-            },
-            name: "Qaed Al Fursan",
-            about:'A long lasting perfume that gets you smelling attractive' ,
-            
-            price: 19000,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/pef5.jpg",
-            },
-            name: "Ramz by lataffa",
-            about:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-            price: 19000 ,
-          },
-          {
-            image: {
-              thumbnail: "/img/pef/pef4.jpg",
-            },
-            name: "Khamrah by Lattafa",
-            about:"Warm, spicy and sweet Fragrance(unisex)",
-            price: 35000,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/pef3.jpg",
-            },
-            name: " Cocktail",
-            about:" >The aroma is luxurious, attractive, and intoxicating with its flawlessness and depth. ",
-            price: 19000,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/24k.jpg",
-            },
-            name: "24k perfume",
-            about:"This luxurious scent is infused with gold flakes that add a touch of glamour and sophistication.",
-            price:7000 ,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/dancer.jpg",
-            },
-            name: "Dancer spray(men and women)",
-            about:"Immerse yourself in the heart of this captivating fragrance, where the blend of top notes ignites your senses with a burst of vibrant citrus.",
-            price:4000 ,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/riggs.jpg",
-            },
-            name: "Riggs",
-            about:"Made using the best French fragrances with stunning light and refreshing notes, Riggs Body Spray offers 24-hour protection, keeping you on the move all day and night.",
-            price:4000 ,
-          },
-          {
-            image: {
-              thumbnail: "./img/pef/wave body mist.jpg",
-            },
-            name: "Wave Body Mist",
-            about:"Wave® body mist is a fresh, lightweight scent that entices with a mix of dewy tropical fruit. Enter a swell of passionate flowers. ",
-            price: 4550 ,
-          },
-        ];
-
-        // Object to track cart items and their quantities
-        const cartItems = {};
-
-        // Function to handle adding an item to the cart
-        const handleAddToCart = (itemName, itemPrice, controlsContainer) => {
-          if (cartItems[itemName]) {
-            cartItems[itemName].quantity += 1;
-          } else {
-            cartItems[itemName] = { quantity: 1, price: itemPrice };
-          }
-
-          // Update the controls to display + and - buttons and quantity
-          controlsContainer.innerHTML = `
-            <button id="minus-btn-${itemName}" style="margin-right: 5px;">-</button>
-            <span id="quantity-display-${itemName}">${cartItems[itemName].quantity}</span>
-            <button id="plus-btn-${itemName}" style="margin-left: 5px;">+</button>
-          `;
-
-          // Add event listeners to the buttons
-          document.getElementById(`minus-btn-${itemName}`)
-            .addEventListener("click", () => {
-              if (cartItems[itemName].quantity > 1) {
-                cartItems[itemName].quantity -= 1;
-                document.getElementById(
-                  `quantity-display-${itemName}`
-                ).textContent = cartItems[itemName].quantity;
-              } else {
-                delete cartItems[itemName];
-                controlsContainer.innerHTML = ""; // Clear controls
-                renderAddButton(controlsContainer, itemName, itemPrice);
-              }
-              updateCart();
-              // console.log(<span id="quantity-display-${itemName}">${cartItems[itemName].quantity}</span>);
-              
-            });
-
-          document
-            .getElementById(`plus-btn-${itemName}`)
-            .addEventListener("click", () => {
-              cartItems[itemName].quantity += 1;
-              document.getElementById(
-                `quantity-display-${itemName}`
-              ).textContent = cartItems[itemName].quantity;
-              updateCart();
-            });
-
-          updateCart();
-        };
-
-        // Helper function to render the "Add to Cart" button
-        const renderAddButton = (controlsContainer, itemName, itemPrice) => {
-          const addButton = document.createElement("button");
-          addButton.textContent = "Add to Cart";
-  addButton.style.alignSelf = 'flex-end ';
-          addButton.onclick = () =>
-            handleAddToCart(itemName, itemPrice, controlsContainer);
-            
-            // Clear previous controls
-          controlsContainer.innerHTML = "";
-          controlsContainer.appendChild(addButton);
-        };
-
-        // Function to update the cart display
-        const updateCart = () => {
-          const cartList = document.getElementById("cart-list");
-          const cartCount = document.getElementById("cart-count");
-
-          cartList.innerHTML = "";
-
-          const items = Object.keys(cartItems);
-          cartCount.textContent = items.length;
-
-          if (items.length === 0) {
-            document.getElementById("empty-cart").style.display = "block";
-            return;
-          }
-
-          document.getElementById("empty-cart").style.display = "none";
-
-          items.forEach((itemName) => {
-            const item = cartItems[itemName];
-            const itemTotal = (item.quantity * item.price).toFixed(2);
-            const listItem = document.createElement("li");
-            listItem.textContent = `
-            
-            ${itemName}: ${item.quantity} unit(s) - $${itemTotal}
-            
-            
-            `
-              
-              
-              
-              ;
-            cartList.appendChild(listItem);
-          });
-        };
-
-        // Function to render products dynamically
-        const renderProducts = () => {
-          const productSection = document.getElementById("product-section");
-
-          data.forEach((product) => {
-            const productCard = document.createElement("div");
-            productCard.classList.add("product-card");
-
-
-
-              productCard.innerHTML = `
-           
-              <img src="${product.image.thumbnail}"     
-                      style='width:100%; height:350px' alt="Body mist">
-                          <div class="card-body">
-                              <p class="text-start mt-3">
-                                  <b>Product name</b><br> <u>${product.name}</u>
-                              </p>
-                               <div class="price-add-line">
-                              <span><b>Price:</b> ₦${product.price.toFixed(2)}</span>
-                              <div class="controls-container"></div>
-                          </div>
-                              <p class ='text-start'><b>About:</b><br><i>${product.about}</i></p>
-                          </div>
-                         
-`;
-
-            
-
-              const controlsContainer = productCard.querySelector('.controls-container');
-              renderAddButton(controlsContainer, product.name, product.price);
-
-            productSection.appendChild(productCard);
-          });
-        };
-
-        // Render products on page load
-        renderProducts();
-    
-</script>
-    </body>
-
-  </html>
-
+  </body>
+</html>
