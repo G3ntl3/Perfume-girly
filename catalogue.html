@@ -20,11 +20,16 @@
     />
     <link rel="stylesheet" href="catalogue.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Shopping Cart</title>
+    <!-- link for toastify  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.ico" type="" />
+
+    <title>Theperfumegirly</title>
   </head>
   <body>
     <!-- navbar begins here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-5">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -76,6 +81,19 @@
             </li>
           </ul>
 
+          <!-- search btn  -->
+          <input
+            type="text"
+            id="searchInput"
+            class="form-control navInput"
+            placeholder="Search for a product..."
+          />
+          <button class="btn btn-primary mx-2" id="searchBtn">
+         <span class="fa fa-search"></i>
+            
+          </button>
+          <button class="btn btn-secondary mx-2" id="clearSearchBtn">✖</button>
+
           <button alt="Send us your order">
             <i>S</i>
             <i>e</i>
@@ -103,32 +121,28 @@
     </nav>
     <!-- navbar ends here -->
 
-    <div id="product-section"></div>
+    <div class="" id="product-section"></div>
 
     <div class="cartsection">
-      
-      <button id="whatsappOrderBtn" class="btn btn-success">Order via WhatsApp</button>
+      <button id="whatsappOrderBtn" class="btn btn-success">
+        Order via WhatsApp
+      </button>
       <h1>Your cart (<span id="cart-count">0</span>)</h1>
-      <ul id="cart-list">
-
-       
-
-      </ul>
+      <ul id="cart-list"></ul>
 
       <div id="empty-cart">
         <center>Your added items would appear here</center>
         <img src="./img/emptycart.png" alt="empty cart " class="" srcset="" />
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
   <script src="./catalogue.js"></script>
 
-
-  </body>
-</html>
+  <!-- script for toastify -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </html>

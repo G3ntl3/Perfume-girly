@@ -17,6 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="./img/favicon.ico" type="" />
+
     <title>Theperfumegirly</title>
   </head>
   <body class="">
@@ -72,28 +74,37 @@
               >
             </li>
           </ul>
-    
-        <a href="./catalogue.html"class='text-decoration-none' >  <button alt="Send us your order">
-           <i>S</i> 
-            <i>e</i>
-            <i>n</i>
-            <i>d</i>
-            <i>&nbsp;</i>
-            <i>u</i>
-            <i>s</i>
-            <i>&nbsp;</i>
+          <!-- search btn -->
 
-            <i>y</i>
-            <i>o</i>
-            <i>u</i>
-            <i>r</i>
-            <i>&nbsp;</i>
-            <i>0</i>
-            <i>r</i>
-            <i>d</i>
-            <i>e</i>
-            <i>r</i>
-          </button> </a>
+<div class="container my-4 d-flex gap-2">
+  <input type="text" id="searchInput" class="form-control" placeholder="Search for a product...">
+  <button class="btn btn-primary" id="searchBtn">Search</button>
+  <button class="btn btn-secondary" id="clearSearchBtn">Clear</button>
+</div>
+
+          <a href="./catalogue.html" class="text-decoration-none">
+            <button alt="Send us your order">
+              <i>S</i>
+              <i>e</i>
+              <i>n</i>
+              <i>d</i>
+              <i>&nbsp;</i>
+              <i>u</i>
+              <i>s</i>
+              <i>&nbsp;</i>
+
+              <i>y</i>
+              <i>o</i>
+              <i>u</i>
+              <i>r</i>
+              <i>&nbsp;</i>
+              <i>0</i>
+              <i>r</i>
+              <i>d</i>
+              <i>e</i>
+              <i>r</i>
+            </button>
+          </a>
           <!-- <button class=" btn border gold" type="submit">Send us your order</button> -->
         </div>
       </div>
@@ -103,21 +114,22 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 mb-5 brandtext">
-            <p class="fs-1 fw-light gold brandname">THE Python GIRL</p>
-            <p><i class="welcome mb-0 gold"> ... a step to perfection </i></p>
+            <p class="fs-1 fw-light gold brandname">THE PERFUME GIRLY</p>
+            <p><i class="welcome mb-0 gold"> ... a step, to perfection </i></p>
             <p class="fs-3 brandinfo">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
               iusto.
             </p>
-            <button class="px-4 py-2 bg-gold fw-bolder rounded">
-              Shop now
-            </button>
+            <a href="./catalogue.html" class="text-decoration-none">
+              <button class="px-4 py-2 bg-gold fw-bolder rounded">
+                Shop now
+              </button>
+            </a>
           </div>
           <div class="col-md-6 text-center">
             <img src="./img/welcomeimg.png" alt="Welcome" class="img-fluid" />
           </div>
         </div>
-        
       </div>
     </section>
 
@@ -194,44 +206,67 @@
 
     <!-- Footer starts from here -->
 
-    <footer
-      class="text-light bg-dark d-flex flex-col d-flex-col d-flex-sm-row justify-content-evenly py-5"
-    >
-      <div class="col1 list-unstyled mb-5 d-flex d-flex-col">
-        <h4 class="mb-2">Company</h4>
-        <a href="" class="mb-2">About us</a>
-        <a href="" class="mb-2">Contact Us</a>
-        <a href="" class="mb-2">Privacy and Policy</a>
-        <a href="" class="mb-2"> Terms & Conditions</a>
-      </div>
+    <footer class="text-light bg-dark py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-12 col-md-3">
+            <h4 class="mb-3">Company</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light d-block mb-2">About Us</a></li>
+              <li>
+                <a href="#" class="text-light d-block mb-2">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-light d-block mb-2">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-light d-block mb-2"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
 
-      <div class="col2 list-unstyled">
-        <h4 class="mb-2">Contact</h4>
-        <li class="mb-2">
-          <i class="fa-solid fa-location-dot"></i>Lautech ogbomosho
-        </li>
-        <li class="mb-2"><i class="fa-solid fa-phone"></i> 0813009954</li>
-        <li class="mb-2">
-          <i class="fa-regular fa-envelope"></i> gentle412@gmail.com
-        </li>
-        <li>
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </li>
-        <li></li>
-      </div>
+          <div class="col-12 col-md-3">
+            <h4 class="mb-3">Contact</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fa-solid fa-location-dot"></i> Lautech Ogbomosho
+              </li>
+              <li class="mb-2"><i class="fa-solid fa-phone"></i> 0813009954</li>
+              <li class="mb-2">
+                <i class="fa-regular fa-envelope"></i> gentle412@gmail.com
+              </li>
+              <li class="d-flex gap-3 mt-2">
+                <a href="#" class="text-light"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" class="text-light"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" class="text-light"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="#" class="text-light"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
 
-      <div class="col3 list-unstyled">
-        <h4>Opening</h4>
-        <li>Monday - Saturday 7AM - 10PM</li>
-        <li>Sunday 10AM - 08PM</li>
-      </div>
+          <div class="col-12 col-md-3">
+            <h4 class="mb-3">Opening Hours</h4>
+            <ul class="list-unstyled">
+              <li>Monday - Saturday: 7AM - 10PM</li>
+              <li>Sunday: 10AM - 08PM</li>
+            </ul>
+          </div>
 
-      <div class="col4 list-unstyled">
-        <h4>Join our group</h4>
-        <button class="btn btn-outline-secondary">Join Now!</button>
+          <div class="col-12 col-md-3">
+            <h4 class="mb-3">Join our group</h4>
+            <button class="btn btn-outline-light">Join Now!</button>
+          </div>
+        </div>
       </div>
     </footer>
 
