@@ -97,7 +97,7 @@ const renderProducts = () => {
         <div class="price-add-line">
           <span><b>Price:</b> ₦${product.price.toFixed(2)}</span>
           <div class="controls-container"></div>
-        </div>
+          </div>
         <p class='text-start'><b>About:</b><br><i>${product.about}</i></p>
       </div>
     `;
@@ -118,9 +118,22 @@ const handleSearch = () => {
   );
 
   if (foundProducts.length === 0) {
-    alert("Product not found!");
+    Toastify({
+      text: "Product not found!",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "top", // `top` or `bottom`
+      position: "center", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+         background: "linear-gradient(to right,rgb(176, 53, 0),rgb(255, 38, 0))"
+      },
+      onClick: function () { } // Callback after click
+    }).showToast();
+  
 
-    
+
     renderProducts();
     return;
   }
