@@ -1,5 +1,5 @@
 // Product data
-const data = [
+const productData = [
   { image: { thumbnail: "./img/pef/pef 2.jpg" }, name: "Qaed Al Fursan", about: "A long lasting perfume that gets you smelling attractive", price: 19000 },
   { image: { thumbnail: "./img/pef/pef5.jpg" }, name: "Ramz by lataffa", about: "Some quick example text to build on the card title and make up the bulk of the card's content.", price: 19000 },
   { image: { thumbnail: "/img/pef/pef4.jpg" }, name: "Khamrah by Lattafa", about: "Warm, spicy and sweet Fragrance(unisex)", price: 35000 },
@@ -55,13 +55,21 @@ const renderAddButton = (controlsContainer, itemName, itemPrice) => {
   controlsContainer.appendChild(addButton);
 };
 
+
 const updateCart = () => {
   const cartList = document.getElementById("cart-list");
-  const cartCount = document.getElementById("cart-count");
+  const cartCount = document.getElementById("cart-count"); // On store page
+  const indexCartCount = document.getElementById("index-cart-count"); // On index.html
 
   cartList.innerHTML = "";
+
   const items = Object.keys(cartItems);
-  cartCount.textContent = items.length;
+  const totalItems = items.length;
+
+  cartCount.textContent = totalItems; // Update cart count in store.html
+  if (indexCartCount) {
+    indexCartCount.textContent = totalItems; // Update cart count in index.html
+  }
 
   if (items.length === 0) {
     document.getElementById("empty-cart").style.display = "block";
@@ -79,14 +87,16 @@ const updateCart = () => {
     cartList.appendChild(listItem);
   });
 
+  // Store updated cart in localStorage
   localStorage.setItem("cart", JSON.stringify(cartItems));
 };
+;
 
 const renderProducts = () => {
   const productSection = document.getElementById("product-section");
   productSection.innerHTML = "";
 
-  data.forEach((product) => {
+  productData.forEach((product) => {
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
 
@@ -113,7 +123,7 @@ const handleSearch = () => {
   const productSection = document.getElementById('product-section');
   productSection.innerHTML = "";
 
-  const foundProducts = data.filter(product =>
+  const foundProducts = productData.filter(product =>
     product.name.toLowerCase().includes(searchValue)
   );
 

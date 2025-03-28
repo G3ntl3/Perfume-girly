@@ -1,4 +1,21 @@
+#index-cart-count{
+margin: -14px -5px -50px 0px;
+position: relative;
+left: -10%;
+color: rgb(254, 230, 78);
+font-weight: 700;
+}
+.fa-shopping-cart{
+  color:rgba(245, 245, 245, 0.709);
+  cursor:pointer;
+}
+
+.nav-item a:hover {
+  color: rgb(254, 230, 78) !important;
+}
+
 button {
+
  display: flex;
  align-items: center;
  justify-content: center;
@@ -9,7 +26,7 @@ button {
  text-transform: uppercase;
  border: 0;
  box-shadow: hsl(#2C0000) 0px 7px 0px 0px;
-background-color: rgb(65, 59, 15);
+background-color: rgb(219, 195, 16);
 color: #2C0000;
 
 
@@ -31,6 +48,7 @@ button:before {
  color: white;
  letter-spacing: 4px;
  opacity: 1;
+ background-color: rgba(254, 231, 78, 0.644);
 /* align-self: ; */
 }
 
@@ -48,7 +66,8 @@ button:hover:before {
 }
 
 button i {
- color: white;
+
+  /* color: white; */
  font-size: 15px;
  font-weight: bold;
  letter-spacing: 4px;
@@ -139,7 +158,7 @@ button:hover i:nth-child(18) {
 
 
 
-/* tezting */
+
 body{
   background-color: black !important;
 }
@@ -147,7 +166,7 @@ body{
   background-color: rgb(26, 2, 2) !important;
 }
 .brandtext {
-  margin-top: -130px;
+  margin-top: -110px;
 }
 .brandname {
   font-size: 3.5rem !important;
@@ -184,6 +203,7 @@ body{
 .sectb h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0 0 1rem;
 }
 
@@ -193,28 +213,11 @@ body{
 }
 
 .centerwelcome{
-
-width: 100%;
-  background-image: url(./img/sectb_bg.jpg);
-  backdrop-filter:blur(50px);
-  /* opacity: .5; */
-  background-size:cover;
-  height: 160%;
-  background-position: center;
-  /* box-shadow: 10px 30px; */
- /* box-shadow:-20px -20px 100px 100px rgb(48, 36, 20); */
-
-
- box-shadow: 
-    inset 0 -5px 10px rgba(162, 107, 18, 0.937),  /* Inner shadow on top */
-    inset 0 5px 10px rgba(162, 107, 18, 0.937),  /* Inner shadow at bottom */
-    0 -20px 70px rgba(162, 107, 18, 0.937),  /* Outer shadow at top */
-    0 20px 70px rgba(162, 107, 18, 0.937);   /* Outer shadow at bottom */
-
-}
-.blur{
-    backdrop-filter:blur(3px);
-padding: 110px 40px;
+  margin-top: -50px;
+  background-color:rgb(26,2,2);
+/* border: 2px solid red; */
+    /* backdrop-filter:blur(3px); */
+padding: 30px 40px;
 text-align: center;
 }
 .centervideo{
@@ -248,9 +251,11 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(39,36,36,1) 58%);
 .secd{
   background-image: url('./img/blackpef.jpg');
   height: 100vh;
-  width: 100vwx;
+
+  /* width: 100vw; */
   background-repeat: no-repeat;
   padding-top: 100px;
+  margin: auto;
 }
 .perfumetext{
   font-size: 1.2rem;
@@ -263,7 +268,7 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(39,36,36,1) 58%);
 }
 .perfumetext span{
 color:  rgb(254, 230, 78) !important;
-font-size: 2em;
+  font-size: 2em;
 /* padding: 60px 0px; */
 
 }
@@ -271,17 +276,89 @@ font-size: 2em;
    background-color: rgb(254, 230, 78) !important;
 
 }
-
+body{
+  /* background-color: rgba(121, 71, 5, 0.911) !important; */
+}
 @media (max-width: 480px) {
   * {
-    /* display: none; */
+    /* border: 2px solid red  !important; */
   }
 
   .brandtext {
-    margin: 40px 0px;
+    margin: 100px 0px 0px 0px !important;
+    /* border: 2PX solid red !important ; */
   }
 
+  .brandtext {
+  margin-top: 110px;
+  width: 100%;
+}
   .brandname {
     font-size: 2rem;
   }
+
+
+  .sectb p{
+    padding: 0px 0px !important ;
+    width: 100% !important;
+  }
+  .sectc{
+ display: flex !important;
+ flex-direction: column  !important ;
+ color: white !important;
+ text-align: center !important;
+ 
+    /* background: rgb(0,0,0); */
+background: linear-gradient(120deg, rgba(0,0,0,1) 45%, rgb(90, 80, 16) 58%,);
+}
+
+
+.sectc div  {
+  width: 100% !important ;
+  padding: 0px 20px !important;
+  margin: 20px 0px !important;
+  /* border: 2px solid red; */
+}
+
+
+
+
+.secd{
+  background-image: url('./img/blackpef_m_view.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  /* padding-top: 100px; */
+
+  
+}
+.perfumetext{
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  width: 100%;
+  display: block;
+  text-align:start;
+padding: 10px 20px;
+  margin: auto;
+  /* border: 2px solid red !important; */
+  /* margin:0px 150px; */
+}
+.perfumetext span{
+color:  rgb(254, 230, 78) !important;
+opacity: 0.9 !important;
+  font-size: 2em;
+/* padding: 60px 0px; */
+
+}
+.perfumetext button{
+   background-color: rgb(254, 230, 78) !important;
+ border-radius: 20px;
+}
+/* .perfumetext button:hover{
+  padding: 200px !important ;
+  border: 2px solid red !important;
+} */
+
+
 }
