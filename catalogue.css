@@ -3,8 +3,19 @@ body {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.396);
 }
+
 *{
   /* border: 2px solid red !important; */
+}
+.navcat{
+  background-color: rgb(79,80,85) !important;
+
+}
+.catalogueNav{
+  /* border: 2px solid red; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .navInput {
   width: 15% !important ;
@@ -18,6 +29,7 @@ body {
   padding: 10px;
   margin: 10px;
   text-align: center;
+  margin-top: 100px !important;
 }
 #empty-cart {
   margin-top: 20px;
@@ -127,8 +139,24 @@ button:hover {
 .price-add-line button:hover {
   background-color: #45a049;
 }
+.searchDiv{
+  /* border: 2px solid red !important; */
 
+}
+.navInput{
+    width: 50% !important;
+  }
 /* Responsive Design */
+@media (max-width:480px) {
+  .navInput{
+    width: 50% !important;
+  }
+  .searchDiv{
+  display: flex; 
+  flex-direction: row !important;
+  border: 2px solid red !important;
+  }
+}
 @media (min-width: 600px) {
   #product-section {
     justify-content: space-between;

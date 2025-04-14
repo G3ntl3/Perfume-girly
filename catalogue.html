@@ -26,11 +26,12 @@
     <link rel="icon" href="./img/favicon.ico" type="" />
 
     <title>Theperfumegirly</title>
+    
   </head>
   <body>
     <!-- navbar begins here -->
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top mb-5">
-      <div class="container">
+    <nav class="navbar navcat  navbar-expand-lg navbar-dark  fixed-top mb-5">
+      <div class="container catalogueNav">
         <a class="navbar-brand" href="#">
           <img
             src="./img/brandlogo.png"
@@ -50,7 +51,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
+dd            <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mx-auto d-flex  mb-2 mb-lg-0">
             <li class="nav-item ">
               <a
@@ -82,24 +83,30 @@
           </ul>
 
           <!-- search btn  -->
-          
+          <div class='searchDiv d-flex'>
 
-             <input
-             type="text"
-             id="searchInput"
+            
+            <input
+            type="text"
+            id="searchInput"
              class="form-control navInput me-3"
              placeholder="Find product"
              />
-             <button class="btn bg-gold mx-2" id="searchBtn">
-               <span class="fa fa-search"></i>
-                
-               </button>
-               <button class="btn btn-secondary me-5" id="clearSearchBtn">✖</button>
-          
+             <div>
+
+               <button class="btn bg-gold mx-2" id="searchBtn">
+                 <span class="fa fa-search"></i>
+                  
+                 </button>
+                 <button class="btn btn-secondary me-5" id="clearSearchBtn">✖</button>
+                 
+                </div>
+                </div>
 
           <!-- <button class=" btn border gold" type="submit">Send us your order</button> -->
         </div>
       </div>
+
     </nav>
     <!-- navbar ends here -->
 
