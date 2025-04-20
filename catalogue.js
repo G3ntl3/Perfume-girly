@@ -100,8 +100,8 @@ const renderProducts = () => {
     const productCard = document.createElement("div");
     productCard.classList.add("product-card");
 
-    productCard.innerHTML = `
-      <img src="${product.image.thumbnail}" style='width:100%; height:350px' alt="Body mist">
+    productCard.innerHTML = ` 
+      <img src="${product.image.thumbnail}" style='width:100%; height:350px' alt="Body mist" >
       <div class="card-body">
         <p class="text-start mt-3"><b>Product name</b><br> <u>${product.name}</u></p>
         <div class="price-add-line">
