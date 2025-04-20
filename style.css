@@ -83,7 +83,6 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,  rgba(43, 37, 15, 1) 68%
 .centerwelcome{
   margin-top: -50px;
   background-color:rgba(247, 191, 7, 0.7);
-/* border: 2px solid red; */
     /* backdrop-filter:blur(3px); */
 padding: 30px 40px;
 text-align: center; 

@@ -4,15 +4,13 @@ body {
   background-color: rgba(0, 0, 0, 0.396);
 }
 
-*{
-  /* border: 2px solid red !important; */
-}
+
 .navcat{
   background-color: rgb(79,80,85) !important;
 
 }
 .catalogueNav{
-  /* border: 2px solid red; */
+  
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -21,7 +19,6 @@ body {
   width: 15% !important ;
   color: white;
   background-color: rgba(255, 255, 255, 0.305);
-  /* border: 2px solid red; */
 }
 
 .product-card {
@@ -154,7 +151,7 @@ button:hover {
   .searchDiv{
   display: flex; 
   flex-direction: row !important;
-  border: 2px solid red !important;
+  
   }
 }
 @media (min-width: 600px) {
