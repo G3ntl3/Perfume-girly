@@ -1,13 +1,13 @@
 // Product data
 const productData = [
-  { image: { thumbnail: "./img/pef/pef 2.jpg" }, name: "Qaed Al Fursan", about: "A long lasting perfume that gets you smelling attractive", price: 19000 },
-  { image: { thumbnail: "./img/pef/pef5.jpg" }, name: "Ramz by lataffa", about: "Some quick example text to build on the card title and make up the bulk of the card's content.", price: 19000 },
-  { image: { thumbnail: "/img/pef/pef4.jpg" }, name: "Khamrah by Lattafa", about: "Warm, spicy and sweet Fragrance(unisex)", price: 35000 },
-  { image: { thumbnail: "./img/pef/pef3.jpg" }, name: "Cocktail", about: "The aroma is luxurious, attractive, and intoxicating with its flawlessness and depth.", price: 19000 },
-  { image: { thumbnail: "./img/pef/24k.jpg" }, name: "24k perfume", about: "This luxurious scent is infused with gold flakes that add a touch of glamour and sophistication.", price: 7000 },
-  { image: { thumbnail: "./img/pef/dancer.jpg" }, name: "Dancer spray(men and women)", about: "Immerse yourself in the heart of this captivating fragrance, where the blend of top notes ignites your senses with a burst of vibrant citrus.", price: 4000 },
-  { image: { thumbnail: "./img/pef/riggs.jpg" }, name: "Riggs", about: "Made using the best French fragrances with stunning light and refreshing notes, Riggs Body Spray offers 24-hour protection, keeping you on the move all day and night.", price: 4000 },
-  { image: { thumbnail: "./img/pef/wave body mist.jpg" }, name: "Wave Body Mist", about: "Wave® body mist is a fresh, lightweight scent that entices with a mix of dewy tropical fruit. Enter a swell of passionate flowers.", price: 4550 }
+  { image: { thumbnail: "./img/pef/pef 2.jpg" }, name: "Qaed Al Fursan",  price: 19000 },
+  { image: { thumbnail: "./img/pef/pef5.jpg" }, name: "Ramz by lataffa",  price: 19000 },
+  { image: { thumbnail: "/img/pef/pef4.jpg" }, name: "Khamrah by Lattafa", price: 35000 },
+  { image: { thumbnail: "./img/pef/pef3.jpg" }, name: "Cocktail",  price: 19000 },
+  { image: { thumbnail: "./img/pef/24k.jpg" }, name: "24k perfume",  price: 7000 },
+  { image: { thumbnail: "./img/pef/dancer.jpg" }, name: "Dancer spray(men and women)", price: 4000 },
+  { image: { thumbnail: "./img/pef/riggs.jpg" }, name: "Riggs",  price: 4000 },
+  { image: { thumbnail: "./img/pef/wave body mist.jpg" }, name: "Wave Body Mist", price: 4550 }
 ];
 
 let cartItems = JSON.parse(localStorage.getItem("cart")) || {};
@@ -108,7 +108,7 @@ const renderProducts = () => {
           <span><b>Price:</b> ₦${product.price.toFixed(2)}</span>
           <div class="controls-container"></div>
           </div>
-        <p class='text-start'><b>About:</b><br><i>${product.about}</i></p>
+       
       </div>
     `;
 
@@ -160,7 +160,7 @@ const handleSearch = () => {
           <span><b>Price:</b> ₦${product.price.toFixed(2)}</span>
           <div class="controls-container"></div>
         </div>
-        <p class='text-start'><b>About:</b><br><i>${product.about}</i></p>
+        
       </div>
     `;
 
