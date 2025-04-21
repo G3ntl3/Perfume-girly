@@ -1,64 +1,76 @@
-#index-cart-count{
-border: none;
-  margin: -14px -5px -50px 0px;
-position: relative;
-left: -10%;
-color: rgb(216, 216, 216);
-font-weight: 700;
+/* General Body Styling */
+body {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(43, 37, 15, 1) 68%, rgba(0, 0, 0, 1) 100%);
 }
-.fa-shopping-cart{
-  color:rgba(245, 245, 245, 0.709);
-  cursor:pointer;
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.726);
+}
+
+.navbar-toggler-icon {
+  background-color: rgb(226, 195, 17);
 }
 
 .nav-item a:hover {
   color: rgb(254, 230, 78) !important;
 }
 
+.navbar .nav-link.active {
+  color: gold;
+  font-weight: bold;
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+  color: #ebb00e;
+}
+
+/* Cart Styling */
+#index-cart-count {
+  border: none;
+  margin: -14px -5px -50px 0px;
+  position: relative;
+  left: -10%;
+  color: rgb(216, 216, 216);
+  font-weight: 700;
+}
+
+.fa-shopping-cart {
+  color: rgba(245, 245, 245, 0.709);
+  cursor: pointer;
+}
+
+.cart-btn {
+  background-color: rgb(57, 48, 12) !important;
+}
+
+/* Button Styling */
 button {
-  
-
- background-color: rgb(26,2,2);
-border: none;
+  background-color: rgb(26, 2, 2);
+  border: none;
 }
 
-
-
-
-body{
-  /* background-color: black !important; */
-background: #000000;
-background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,  rgba(43, 37, 15, 1) 68%, rgba(0, 0, 0, 1) 100%);
-}
-.navbar {
-  /* background-color: rgb(26, 2, 2) !important; */
-}
+/* Typography */
 .brandtext {
   margin-top: -110px;
 }
+
 .brandname {
   font-size: 3.5rem !important;
 }
-.brandinfo {
-}
-.gold {
 
+.gold {
   color: rgb(254, 230, 78) !important;
 }
-.bg-gold{
- background-color: rgb(254, 230, 78) !important;
 
+.bg-gold {
+  background-color: rgb(254, 230, 78) !important;
 }
-.cart-btn{
-  background-color: rgb(57,48,12) !important;
-}
+
+/* Sections */
 .sectb {
   margin: 100px 0px;
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-items: center; */
-  /* align-items: center; */
-
 }
 
 .sectb h1,
@@ -71,8 +83,8 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,  rgba(43, 37, 15, 1) 68%
 .sectb h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
 }
 
 .sectb p {
@@ -80,190 +92,117 @@ background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%,  rgba(43, 37, 15, 1) 68%
   line-height: 1.5;
 }
 
-.centerwelcome{
+.centerwelcome {
   margin-top: -50px;
-  background-color:rgba(247, 191, 7, 0.7);
-    /* backdrop-filter:blur(3px); */
-padding: 30px 40px;
-text-align: center; 
-}
-.centervideo{
-width: 50%;
-
-}
-.centervideo video{
-width: 100%;
-margin: auto;
-
-}
-.centerwelcome h1{
-  backdrop-filter:blur(30px);
-
-  /* opacity: .9; */
+  background-color: rgba(247, 191, 7, 0.7);
+  padding: 30px 40px;
+  text-align: center;
 }
 
-.sectc{
-  background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 45%, rgba(39,36,36,1) 58%);
+.centervideo {
+  width: 50%;
 }
 
-.sectc img{
-/* padding: 0px 8 0px; */
+.centervideo video {
+  width: 100%;
+  margin: auto;
+}
+
+.centerwelcome h1 {
+  backdrop-filter: blur(30px);
+}
+
+/* Section C */
+.sectc {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 45%, rgba(39, 36, 36, 1) 58%);
+}
+
+.sectc img {
   width: 100%;
 }
 
-
-.secd{
+/* Section D */
+.secd {
   background-image: url('./img/blackpef.jpg');
-  height: 100vh;
-
-  /* width: 100vw; */
   background-repeat: no-repeat;
   padding-top: 100px;
   margin: auto;
 }
-.perfumetext{
+
+.perfumetext {
   font-size: 1.2rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
-  display: block;
-  text-align:start;
-  justify-content: center;
-  margin:0px 150px;
+  text-align: start;
+  margin: 0px 150px;
 }
-.perfumetext span{
-color:  rgb(254, 230, 78) !important;
+
+.perfumetext span {
+  color: rgb(254, 230, 78) !important;
   font-size: 2em;
-/* padding: 60px 0px; */
+}
 
+.perfumetext button {
+  background-color: rgb(254, 230, 78) !important;
 }
-.perfumetext button{
-   background-color: rgb(254, 230, 78) !important;
 
-}
-body{
-  /* background-color: rgba(121, 71, 5, 0.911) !important; */
-}
+/* Media Queries */
 @media (max-width: 480px) {
-  * {
-    /* border: 2px solid red  !important; */
-  }
-
   .brandtext {
     margin: 100px 0px 0px 0px !important;
-    /* border: 2PX solid red !important ; */
+    margin-top: 110px;
+    width: 100%;
   }
 
-  .brandtext {
-  margin-top: 110px;
-  width: 100%;
-}
   .brandname {
     font-size: 2rem;
   }
 
-
-  .sectb p{
-    padding: 0px 0px !important ;
+  .sectb p {
+    padding: 0 !important;
     width: 100% !important;
   }
-  .sectc{
- display: flex !important;
- flex-direction: column  !important ;
- color: white !important;
- text-align: center !important;
- 
-    /* background: rgb(0,0,0); */
-background: linear-gradient(120deg, rgba(0,0,0,1) 45%, rgb(90, 80, 16) 58%,);
-}
 
-
-.sectc div  {
-  width: 100% !important ;
-  padding: 0px 20px !important;
-  margin: 20px 0px !important;
-  /* border: 2px solid red; */
-}
-
-
-
-
-.secd{
-  background-image: url('./img/blackpef_m_view.jpg');
-  height: 100vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  /* padding-top: 100px; */
-
-  
-}
-.perfumetext{
-  font-size: 1.2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: black;
-  width: 100%;
-  display: block;
-  text-align:start;
-padding: 10px 20px;
-  margin: auto;
-  /* border: 2px solid red !important; */
-  /* margin:0px 150px; */
-}
-.perfumetext span{
-color:  rgb(254, 230, 78) !important;
-opacity: 0.9 !important;
-  font-size: 2em;
-/* padding: 60px 0px; */
-
-}
-.perfumetext button{
-   background-color: rgb(254, 230, 78) !important;
- border-radius: 20px;
-}
-/* .perfumetext button:hover{
-  padding: 200px !important ;
-  border: 2px solid red !important;
-} */
-
-
-}
-
-
-/* Custom Hamburger Icon Color */
-.navbar-toggler-icon {
-  background-color: rgb(226, 195, 17); /* Change the hamburger icon color */
-}
-
-/* Mobile View Modifications */
-@media (max-width: 767px) {
-  .navbar .nav-link {
-    font-size: 1.2rem; /* Adjust font size for better readability on mobile */
-    color: #ebb00e; /* Make sure the text color is white on mobile */
+  .sectc {
+    display: flex !important;
+    flex-direction: column !important;
+    color: white !important;
+    text-align: center !important;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 45%, rgb(90, 80, 16) 58%);
   }
 
-  .navbar .nav-link:hover {
-    color: #ffcc00; /* Add hover effect */
+  .sectc div {
+    width: 100% !important;
+    padding: 0px 20px !important;
+    margin: 20px 0px !important;
   }
 
-  /* Modify anchor tags for active state */
-  .navbar .nav-link.active {
-    color: gold; /* Set active link color to gold */
-    font-weight: bold;
+  .secd {
+    background-image: url('./img/blackpef_m_view.jpg');
+    width: 100vw;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
   }
-  
-  .cartNumber .fa-shopping-cart {
-    font-size: 1.5rem; 
+
+  .perfumetext {
+    color: black;
+    width: 100%;
+    padding: 10px 20px;
+    margin: auto;
+  }
+
+  .perfumetext span {
+    opacity: 0.9 !important;
+  }
+
+  .perfumetext button {
+    border-radius: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Styles for tablet portrait */
-
-  .sectc{
-
+  .sectc {
     display: flex;
-    flex-direction: column !important
-    ;
+    flex-direction: column !important;
   }
 }
-
