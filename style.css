@@ -180,6 +180,7 @@ button {
   .secd {
     background-image: url('./img/blackpef_m_view.jpg');
     width: 100vw;
+    height: 150vh;
     background-repeat: no-repeat;
     margin-bottom: 20px;
   }

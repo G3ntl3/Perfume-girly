@@ -178,3 +178,28 @@ document.getElementById("clearSearchBtn").addEventListener("click", () => {
 
 renderProducts();
 updateCart();
+
+document.getElementById("whatsappOrderBtn").addEventListener("click", () => {
+  if (Object.keys(cartItems).length === 0) {
+    alert("Your cart is empty!");
+    return;
+  }
+
+  let message = "Hello Perfumegirly ! I'd like to order:\n";
+
+  Object.entries(cartItems).forEach(([name, { quantity, price }]) => {
+    message += `- ${name} x${quantity} (₦${(quantity * price).toLocaleString()})\n`;
+  });
+
+  const totalAmount = Object.values(cartItems)
+    .reduce((sum, item) => sum + item.price * item.quantity, 0)
+    .toLocaleString();
+
+  message += `\nTotal: ₦${totalAmount}`;
+
+  const phoneNumber = "2349132148904"; // Replace with your actual WhatsApp number (no `+` or leading `0`)
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+});
+
