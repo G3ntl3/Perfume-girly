@@ -133,9 +133,9 @@ const handleSearch = () => {
       duration: 3000,
       newWindow: true,
       close: true,
-      gravity: "top", // `top` or `bottom`
-      position: "center", // `left`, `center` or `right`
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      gravity: "top", 
+      position: "center",
+      stopOnFocus: true,
       style: {
          background: "linear-gradient(to right,rgb(176, 53, 0),rgb(255, 38, 0))"
       },
@@ -197,7 +197,7 @@ document.getElementById("whatsappOrderBtn").addEventListener("click", () => {
 
   message += `\nTotal: ₦${totalAmount}`;
 
-  const phoneNumber = "2349132148904"; // Replace with your actual WhatsApp number (no `+` or leading `0`)
+  const phoneNumber = "2349132148904"; 
   const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   window.open(url, "_blank");
